@@ -1,0 +1,17 @@
+.p-lede {
+  @at-root {
+    & {
+    }
+
+    .p-lede__text {
+      & + & {
+        margin-top: 1em;
+
+        a {
+          color: c(pink);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,10 @@
 // MediaQueries
-@mixin max($bp: 767px) {
+@mixin max($bp: 767.999px) {
   @media (max-width: $bp) {
     @content;
   }
 }
+// iPad以上
 @mixin min($bp: 768px) {
   @media (min-width: $bp) {
     @content;

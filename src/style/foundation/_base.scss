@@ -1,9 +1,13 @@
-:root {
-  font-size: 10px;
-}
-
 body {
+  color: c(black);
+  font-size: 16px;
+  line-height: 1.6;
   font-family: 'Noto Sans JP', sans-serif;
+  background-color: rgba(c(black), 0.025);
+
+  &.-demoView {
+    font-size: vw(20);
+  }
 }
 
 img {

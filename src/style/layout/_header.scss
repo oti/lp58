@@ -1,10 +1,23 @@
 .l-header {
   @at-root {
     & {
+      padding-right: 20px;
+      padding-left: 20px;
+      background-color: c(black);
+
+      .-demoView & {
+        padding-right: vw(20);
+        padding-left: vw(20);
+      }
     }
 
     .l-header__inner {
+      margin: auto;
+      max-width: 1560px;
 
+      .-demoView & {
+        min-width: 100%;
+      }
     }
   }
 }

@@ -1,0 +1,228 @@
+-
+  var _title = ""
+  var _sitename = "現場で役立つCSSアニメーション オンラインデモ - CSS Nite LP58「Coder’s High 2018」"
+  var _desc = "2018年9月29日にCSS Nite LP58「Coder's High 2018」で発表した「現場で役立つCSSアニメーション」のデモをオンラインで掲載しています。"
+  var _id = "top"
+  var _host = "https://oti.github.io"
+  var _pagePath = "/lp58/"
+  var _permalink = _host+_pagePath
+  var escaped_title = encodeURIComponent(_title)
+  var escaped_permalink = encodeURIComponent(_permalink)
+
+doctype html
+html(lang="ja")
+  include _partial/_meta
+
+  body#top
+    include _partial/_header
+    main.l-main(role="main")
+      include _partial/_viewChange
+      include _partial/_nav
+
+      .p-section
+        .p-section__inner
+          .p-lede
+            p.p-lede__text 2018年9月29日にCSS Nite LP58「Coder's High 2018」で発表した「現場で役立つCSSアニメーション」のデモをオンラインで掲載しています。
+            p.p-lede__text 発表の中で参照したデモなので、このページ「だけ」では説明不足である点、なにとぞご留意ください。
+            p.p-lede__text これをビルドした開発環境も丸ごと#[a(href="https://github.com/oti/lp58/", target="_blank") GitHubで公開しています]。ライセンスはMITにしておいたので、規定の範囲内でご自由にお使いください。プルリクもお待ちしています！
+            p.p-lede__text 何かお知らせしたいことがある時は、#[a(href="#contact") ページフッターの連絡先]から好きな手段で教えてください。
+
+      section.p-section
+        .p-section__inner
+          h2#demo-1.p-section__heading
+            a(href="#demo-1") demo-1: transitionプロパティのデモ
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-1__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-1__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-2.p-section__heading
+            a(href="#demo-2") demo-2: cubic-bezier() のデモ
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-2__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-2__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-3.p-section__heading
+            a(href="#demo-3") demo-3: cubic-bezier() を利用したカスタムイージングの一覧
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header Scss
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-3__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Custom Easing List
+                  .p-view__body
+                    include _demo/_demo-3__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-4.p-section__heading
+            a(href="#demo-4") demo-4: onとoffで異なるイージングを設定したデモ
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-4__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-4__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-5.p-section__heading
+            a(href="#demo-5") demo-5: 複数の動きを設定したデモ
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-5__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-5__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-6.p-section__heading
+            a(href="#demo-6") demo-6: 複数の動きが別のイージングでアニメーションするデモ
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-6__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-6__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-7.p-section__heading
+            a(href="#demo-7") demo-7: 集めて交差、集めて整列
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-7__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-7__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-8.p-section__heading
+            a(href="#demo-8") demo-8: どっか行って逆から出てくる
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-8__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-8__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-9.p-section__heading
+            a(href="#demo-9") demo-9: こっちは広く、そっちは狭く
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-9__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-9__view
+
+      section.p-section
+        .p-section__inner
+          h2#demo-10.p-section__heading
+            a(href="#demo-10") demo-10: 駆け抜ける反転
+          .p-section__demo
+            .p-split
+              .p-split__col
+                .p-code
+                  p.p-code__header CSS
+                  .p-code__body
+                    pre.p-code__pre
+                      code.p-code__code(data-language="css")
+                        include _demo/_demo-10__code
+              .p-split__col
+                .p-view
+                  p.p-view__header Result
+                  .p-view__body
+                    include _demo/_demo-10__view
+
+      aside.p-section
+        .p-section__inner
+          .p-hang
+            .p-hang__header
+              p シェア
+            .p-hang__body
+              include _partial/_share
+
+    include _partial/_footer

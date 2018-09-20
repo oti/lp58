@@ -1,0 +1,20 @@
+.p-split {
+  @at-root {
+    & {
+      display: flex;
+      border: 1px solid c(black);
+      border-radius: 6px;
+      overflow: hidden;
+
+      @include max {
+        flex-direction: column;
+      }
+    }
+
+    .p-split__col {
+      flex: 1 1 50%;
+      display: flex;
+      overflow-x: auto;
+    }
+  }
+}

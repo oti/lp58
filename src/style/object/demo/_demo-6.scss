@@ -1,0 +1,79 @@
+.p-btn6 {
+  @at-root {
+    & {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      border: 4px solid #000;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 450px;
+      height: 200px;
+      color: #000;
+      font-size: 40px;
+      background-color: #fff;
+      overflow: hidden;
+      transition-property: box-shadow;
+      transition-duration: 0.5s;
+      transition-timing-function: linear;
+
+      & + & {
+        margin-top: 30px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: tomato;
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-timing-function: linear;
+      transform: scale(1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotateZ(-23deg);
+      z-index: -1;
+      display: block;
+      width: 510px;
+      height: 0;
+      background-color: tomato;
+      transition-property: height, transform;
+      transition-duration: 0.5s;
+      transition-timing-function: linear;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 30px tomato;
+      &::before {
+        transform: scale(0);
+      }
+      &::after {
+        height: 5px;
+        transform: translateY(-50%) rotateZ(-18.75deg);
+      }
+    }
+
+    &.-multiAnim {
+      transition-timing-function: $easeInExpo;
+      &::before {
+        transition-timing-function: $easeOutExpo;
+      }
+      &::after {
+        transition-timing-function: $easeInOutExpo;
+      }
+    }
+  }
+}

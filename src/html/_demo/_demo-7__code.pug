@@ -1,0 +1,56 @@
+.
+  /* HTML
+  <button class="p-btn7" type="button">
+    <span class="p-btn7__line -line1"></span>
+    <span class="p-btn7__line -line2"></span>
+    <span class="p-btn7__line -line3"></span>
+  </button>
+  */
+  .p-btn7 {
+    /* ボタンのスタイルは省略 */
+  }
+
+  .p-btn7__line {
+    position: absolute;
+    left: 78px;
+    width: 210px;
+    height: 12px;
+    background-color: #000;
+  }
+  .p-btn7__line.-line1 {
+    top: 72px;
+    transform-origin: center center;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: top, background-color, transform;
+    transition-duration: 0.3s;
+    transition-delay: 0.6s, 0s, 0s;
+  }
+  .p-btn7__line.-line2 {
+    top: 120px;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+  }
+  .p-btn7__line.-line3 {
+    top: 168px;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: top, background-color, transform;
+    transition-duration: 0.3s;
+    transition-delay: 0.6s, 0s, 0s;
+  }
+
+  .p-btn7.-opened .p-btn7__line.-line1 {
+    top: 120px;
+    background-color: tomato;
+    transform: rotateZ(23deg);
+    transition-delay: 0s, 0s, 0.6s;
+  }
+  .p-btn7.-opened .p-btn7__line.-line2 {
+    background-color: transparent;
+  }
+  .p-btn7.-opened .p-btn7__line.-line3 {
+    top: 120px;
+    background-color: tomato;
+    transform: rotateZ(-23deg);
+    transition-delay: 0s, 0s, 0.6s;
+  }

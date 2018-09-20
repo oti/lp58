@@ -1,0 +1,257 @@
+.p-easeList {
+  display: block;
+  width: 100%;
+}
+
+.p-easeList__item {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(c(black), 0.25);
+
+  display: flex;
+  align-items: center;
+}
+
+.p-easeList__toggle {
+  cursor: pointer;
+  min-width: 150px;
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.p-easeList__name {
+  flex: 0 0 auto;
+  width: 120px;
+}
+
+.p-easeList__width {
+  position: relative;
+  flex: 1 1 auto;
+  margin-left: 30px;
+  border: 1px solid rgba(c(black), 0.25);
+  width: 40%;
+  height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s linear;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    background-color: tomato;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(100% / 3);
+    width: calc(100% / 3);
+    border-right: 1px solid rgba(c(black), 0.25);
+    border-left: 1px solid rgba(c(black), 0.25);
+    height: 100%;
+  }
+
+  &:hover,
+  &:focus,
+  #easeListAllAnimToggle:checked ~ .p-cssTab & {
+    &::before {
+      transform: scaleX(1)
+    }
+  }
+
+  &.-ease::before           {transition-timing-function: ease}
+  &.-ease-in::before        {transition-timing-function: ease-in}
+  &.-ease-out::before       {transition-timing-function: ease-out}
+  &.-ease-in-oute::before   {transition-timing-function: ease-in-out}
+  &.-easeInSine::before     {transition-timing-function: $easeInSine}
+  &.-easeOutSine::before    {transition-timing-function: $easeOutSine}
+  &.-easeInOutSine::before  {transition-timing-function: $easeInOutSine}
+  &.-easeInQuad::before     {transition-timing-function: $easeInQuad}
+  &.-easeOutQuad::before    {transition-timing-function: $easeOutQuad}
+  &.-easeInOutQuad::before  {transition-timing-function: $easeInOutQuad}
+  &.-easeInCubic::before    {transition-timing-function: $easeInCubic}
+  &.-easeOutCubic::before   {transition-timing-function: $easeOutCubic}
+  &.-easeInOutCubic::before {transition-timing-function: $easeInOutCubic}
+  &.-easeInQuart::before    {transition-timing-function: $easeInQuart}
+  &.-easeOutQuart::before   {transition-timing-function: $easeOutQuart}
+  &.-easeInOutQuart::before {transition-timing-function: $easeInOutQuart}
+  &.-easeInQuint::before    {transition-timing-function: $easeInQuint}
+  &.-easeOutQuint::before   {transition-timing-function: $easeOutQuint}
+  &.-easeInOutQuint::before {transition-timing-function: $easeInOutQuint}
+  &.-easeInExpo::before     {transition-timing-function: $easeInExpo}
+  &.-easeOutExpo::before    {transition-timing-function: $easeOutExpo}
+  &.-easeInOutExpo::before  {transition-timing-function: $easeInOutExpo}
+  &.-easeInCirc::before     {transition-timing-function: $easeInCirc}
+  &.-easeOutCirc::before    {transition-timing-function: $easeOutCirc}
+  &.-easeInOutCirc::before  {transition-timing-function: $easeInOutCirc}
+  &.-easeInBack::before     {transition-timing-function: $easeInBack}
+  &.-easeOutBack::before    {transition-timing-function: $easeOutBack}
+  &.-easeInOutBack::before  {transition-timing-function: $easeInOutBack}
+
+
+  #easeListLoopToggle:checked ~ .p-cssTab & {
+    &::before {
+      animation: scaleLoop 0.5s linear 0s infinite alternate;
+    }
+
+    @keyframes scaleLoop {
+      0% {transform: scaleX(0)}
+      100% {transform: scaleX(1)}
+    }
+
+    &.-ease::before           {animation-timing-function: ease}
+    &.-ease-in::before        {animation-timing-function: ease-in}
+    &.-ease-out::before       {animation-timing-function: ease-out}
+    &.-ease-in-oute::before   {animation-timing-function: ease-in-out}
+    &.-easeInSine::before     {animation-timing-function: $easeInSine}
+    &.-easeOutSine::before    {animation-timing-function: $easeOutSine}
+    &.-easeInOutSine::before  {animation-timing-function: $easeInOutSine}
+    &.-easeInQuad::before     {animation-timing-function: $easeInQuad}
+    &.-easeOutQuad::before    {animation-timing-function: $easeOutQuad}
+    &.-easeInOutQuad::before  {animation-timing-function: $easeInOutQuad}
+    &.-easeInCubic::before    {animation-timing-function: $easeInCubic}
+    &.-easeOutCubic::before   {animation-timing-function: $easeOutCubic}
+    &.-easeInOutCubic::before {animation-timing-function: $easeInOutCubic}
+    &.-easeInQuart::before    {animation-timing-function: $easeInQuart}
+    &.-easeOutQuart::before   {animation-timing-function: $easeOutQuart}
+    &.-easeInOutQuart::before {animation-timing-function: $easeInOutQuart}
+    &.-easeInQuint::before    {animation-timing-function: $easeInQuint}
+    &.-easeOutQuint::before   {animation-timing-function: $easeOutQuint}
+    &.-easeInOutQuint::before {animation-timing-function: $easeInOutQuint}
+    &.-easeInExpo::before     {animation-timing-function: $easeInExpo}
+    &.-easeOutExpo::before    {animation-timing-function: $easeOutExpo}
+    &.-easeInOutExpo::before  {animation-timing-function: $easeInOutExpo}
+    &.-easeInCirc::before     {animation-timing-function: $easeInCirc}
+    &.-easeOutCirc::before    {animation-timing-function: $easeOutCirc}
+    &.-easeInOutCirc::before  {animation-timing-function: $easeInOutCirc}
+    &.-easeInBack::before     {animation-timing-function: $easeInBack}
+    &.-easeOutBack::before    {animation-timing-function: $easeOutBack}
+    &.-easeInOutBack::before  {animation-timing-function: $easeInOutBack}
+  }
+
+
+  #easeListLoopToggle:checked + #easeListPauseToggle:checked ~ .p-cssTab & {
+    &::before {
+      animation-play-state: paused;
+    }
+  }
+
+  #easeListDuration05:checked ~.p-cssTab &::before {
+    transition-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+  #easeListDuration1:checked ~.p-cssTab &::before {
+    transition-duration: 1s;
+    animation-duration: 1s;
+  }
+  #easeListDuration3:checked ~.p-cssTab &::before {
+    transition-duration: 3s;
+    animation-duration: 3s;
+  }
+}
+
+.p-easeList__color {
+  flex: 1 1 auto;
+  margin-left: 30px;
+  width: 40%;
+  height: 20px;
+  background-color: skyblue;
+  transition: background-color 0.5s linear;
+
+  &:hover,
+  &:focus,
+  #easeListAllAnimToggle:checked ~ .p-cssTab & {
+    background-color: navy;
+  }
+
+  &.-ease           {transition-timing-function: ease}
+  &.-ease-in        {transition-timing-function: ease-in}
+  &.-ease-out       {transition-timing-function: ease-out}
+  &.-ease-in-oute   {transition-timing-function: ease-in-out}
+  &.-easeInSine     {transition-timing-function: $easeInSine}
+  &.-easeOutSine    {transition-timing-function: $easeOutSine}
+  &.-easeInOutSine  {transition-timing-function: $easeInOutSine}
+  &.-easeInQuad     {transition-timing-function: $easeInQuad}
+  &.-easeOutQuad    {transition-timing-function: $easeOutQuad}
+  &.-easeInOutQuad  {transition-timing-function: $easeInOutQuad}
+  &.-easeInCubic    {transition-timing-function: $easeInCubic}
+  &.-easeOutCubic   {transition-timing-function: $easeOutCubic}
+  &.-easeInOutCubic {transition-timing-function: $easeInOutCubic}
+  &.-easeInQuart    {transition-timing-function: $easeInQuart}
+  &.-easeOutQuart   {transition-timing-function: $easeOutQuart}
+  &.-easeInOutQuart {transition-timing-function: $easeInOutQuart}
+  &.-easeInQuint    {transition-timing-function: $easeInQuint}
+  &.-easeOutQuint   {transition-timing-function: $easeOutQuint}
+  &.-easeInOutQuint {transition-timing-function: $easeInOutQuint}
+  &.-easeInExpo     {transition-timing-function: $easeInExpo}
+  &.-easeOutExpo    {transition-timing-function: $easeOutExpo}
+  &.-easeInOutExpo  {transition-timing-function: $easeInOutExpo}
+  &.-easeInCirc     {transition-timing-function: $easeInCirc}
+  &.-easeOutCirc    {transition-timing-function: $easeOutCirc}
+  &.-easeInOutCirc  {transition-timing-function: $easeInOutCirc}
+  &.-easeInBack     {transition-timing-function: $easeInBack}
+  &.-easeOutBack    {transition-timing-function: $easeOutBack}
+  &.-easeInOutBack  {transition-timing-function: $easeInOutBack}
+
+  #easeListLoopToggle:checked ~ .p-cssTab & {
+    animation: colorLoop 0.5s linear 0s infinite alternate;
+
+    @keyframes colorLoop {
+      0% {background-color: skyblue}
+      100% {background-color: navy}
+    }
+
+    &.-ease           {animation-timing-function: ease}
+    &.-ease-in        {animation-timing-function: ease-in}
+    &.-ease-out       {animation-timing-function: ease-out}
+    &.-ease-in-oute   {animation-timing-function: ease-in-out}
+    &.-easeInSine     {animation-timing-function: $easeInSine}
+    &.-easeOutSine    {animation-timing-function: $easeOutSine}
+    &.-easeInOutSine  {animation-timing-function: $easeInOutSine}
+    &.-easeInQuad     {animation-timing-function: $easeInQuad}
+    &.-easeOutQuad    {animation-timing-function: $easeOutQuad}
+    &.-easeInOutQuad  {animation-timing-function: $easeInOutQuad}
+    &.-easeInCubic    {animation-timing-function: $easeInCubic}
+    &.-easeOutCubic   {animation-timing-function: $easeOutCubic}
+    &.-easeInOutCubic {animation-timing-function: $easeInOutCubic}
+    &.-easeInQuart    {animation-timing-function: $easeInQuart}
+    &.-easeOutQuart   {animation-timing-function: $easeOutQuart}
+    &.-easeInOutQuart {animation-timing-function: $easeInOutQuart}
+    &.-easeInQuint    {animation-timing-function: $easeInQuint}
+    &.-easeOutQuint   {animation-timing-function: $easeOutQuint}
+    &.-easeInOutQuint {animation-timing-function: $easeInOutQuint}
+    &.-easeInExpo     {animation-timing-function: $easeInExpo}
+    &.-easeOutExpo    {animation-timing-function: $easeOutExpo}
+    &.-easeInOutExpo  {animation-timing-function: $easeInOutExpo}
+    &.-easeInCirc     {animation-timing-function: $easeInCirc}
+    &.-easeOutCirc    {animation-timing-function: $easeOutCirc}
+    &.-easeInOutCirc  {animation-timing-function: $easeInOutCirc}
+    &.-easeInBack     {animation-timing-function: $easeInBack}
+    &.-easeOutBack    {animation-timing-function: $easeOutBack}
+    &.-easeInOutBack  {animation-timing-function: $easeInOutBack}
+  }
+
+
+  #easeListLoopToggle:checked + #easeListPauseToggle:checked ~ .p-cssTab & {
+    animation-play-state: paused;
+  }
+
+  #easeListDuration05:checked ~.p-cssTab & {
+    transition-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+  #easeListDuration1:checked ~.p-cssTab & {
+    transition-duration: 1s;
+    animation-duration: 1s;
+  }
+  #easeListDuration3:checked ~.p-cssTab & {
+    transition-duration: 3s;
+    animation-duration: 3s;
+  }
+}

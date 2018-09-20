@@ -1,0 +1,53 @@
+.p-address {
+  @at-root {
+    & {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-style: normal;
+      .-demoView & {
+        font-size: vw(18);
+      }
+    }
+
+    .p-address__heading {
+      font-weight: bold;
+      &::after {
+        content: "："
+      }
+    }
+
+    .p-address__list {
+      display: flex;
+
+      .p-address__heading + & {
+        margin-left: 30px;
+
+        .-demoView & {
+          margin-left: vw(30);
+        }
+      }
+    }
+
+    .p-address__item {
+      & + &::before {
+        content: "/";
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .-demoView & {
+          padding-right: vw(15);
+          padding-right: vw(15);
+        }
+      }
+    }
+
+    a.p-address__link {
+      &:hover,
+      &:focus {
+        color: c(cyan)
+      }
+    }
+
+  }
+}

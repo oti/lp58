@@ -11,11 +11,39 @@
 @import 'foundation/reset';
 @import 'foundation/base';
 @import 'foundation/what-input';
+@import 'foundation/rainbow-code';
 
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
 
+// @import 'object/component/btn';
+
+@import 'object/demo/demo-1';  // transitionのデモ
+@import 'object/demo/demo-2';  // cubic-bezier()のデモ
+@import 'object/demo/demo-3';  // カスタムイージングの一覧
+@import 'object/demo/demo-4';  // onとoffで異なるイージングを設定したデモ
+@import 'object/demo/demo-5';  // 複数の動きを設定したデモ
+@import 'object/demo/demo-6';  // 複数の動きが別のイージングでアニメーションするデモ
+@import 'object/demo/demo-7';  // 集めて交差、集めて復帰
+@import 'object/demo/demo-8';  // どっか行って逆から出てくる
+@import 'object/demo/demo-9';  // こっちは広く、そっちは狭く
+@import 'object/demo/demo-10'; // 駆け抜ける反転、千里をゆく
+
+@import 'object/project/viewChange';
+@import 'object/project/sectionNav';
 @import 'object/project/section';
+@import 'object/project/title';
+@import 'object/project/lede';
+@import 'object/project/split';
+@import 'object/project/code';
+@import 'object/project/view';
+@import 'object/project/cssTab';
+@import 'object/project/exposeToggle';
+@import 'object/project/hang';
+@import 'object/project/shareList';
+@import 'object/project/credit';
+@import 'object/project/address';
 
 @import 'object/utility/visuallyHidden';
+@import 'object/utility/hide';

@@ -1,0 +1,42 @@
+.p-viewChange {
+  @at-root {
+    & {
+      position: sticky;
+      z-index: 3;
+      top: 0;
+    }
+
+    .p-viewChange__inner {
+      position: absolute;
+      top: 15px;
+      right: 155px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border-radius: 8px;
+      color: #fff;
+      height: 50px;
+      background-color: rgba(#000, 0.75);
+
+      .-demoView & {
+        top: vw(10);
+        right: vw(112);
+        padding: vw(10);
+        border-radius: vw(8);
+        height: vw(30);
+      }
+    }
+
+    .p-viewChange__btn {
+      @extend %reset-Button;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+
+      .-demoView & {
+        font-size: vw(12);
+      }
+    }
+  }
+}

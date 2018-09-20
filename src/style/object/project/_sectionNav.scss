@@ -1,0 +1,77 @@
+.p-sectionNav {
+  @at-root {
+    & {
+      position: sticky;
+      z-index: 2;
+      top: 0;
+    }
+
+    .p-sectionNav__inner {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      color: #fff;
+      background-color: rgba(#000, 0.75);
+
+      .-demoView & {
+        top: vw(10);
+        right: vw(10);
+        padding: vw(10);
+        border-radius: vw(8);
+      }
+    }
+
+    .p-sectionNav__heading {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: normal;
+      height: 20px;
+
+      .-demoView & {
+        font-size: vw(12);
+        height: vw(10);
+      }
+    }
+
+    .p-sectionNav__toggler {
+      cursor: pointer;
+    }
+
+    .p-sectionNav__list {
+      margin-top: 10px;
+      display: none;
+      #sectionNav:checked ~ & {
+        display: block;
+      }
+
+      .-demoView & {
+        margin-top: vw(5);
+      }
+    }
+
+    .p-sectionNav__item {
+      .-demoView & {
+        font-size: vw(14);
+      }
+      & + & {
+        margin-top: 10px;
+        .-demoView & {
+          margin-top: vw(5);
+        }
+      }
+      &::before {
+        content: "・";
+      }
+    }
+
+    .p-sectionNav__link {
+      &:hover,
+      &:focus {
+        color: c(cyan)
+      }
+    }
+  }
+}

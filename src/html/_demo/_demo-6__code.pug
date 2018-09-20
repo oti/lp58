@@ -1,0 +1,60 @@
+.
+  .p-btn6 {
+    /* demo-5 と同じ */
+
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+  .p-btn6::before {
+    /* demo-5 と同じ */
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transform: scale(1);
+  }
+  .p-btn6::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(-23deg);
+    z-index: -1;
+    display: block;
+    width: 510px;
+    height: 0;
+    background-color: tomato;
+
+    transition-property: height, transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+  .p-btn6:hover,
+  .p-btn6:focus {
+    box-shadow: inset 0 0 0 30px tomato;
+  }
+  .p-btn6:hover::before,
+  .p-btn6:focus::before {
+    transform: scale(0);
+  }
+  .p-btn6:hover::after,
+  .p-btn6:focus::after {
+    height: 5px;
+    transform: translateY(-50%) rotateZ(-18.75deg);
+  }
+
+  .p-btn6.-multiAnim {
+    transition-timing-function:
+      /* easeInExpo */
+      cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+  .p-btn6.-multiAnim::before {
+    transition-timing-function:
+      /* easeOutExpo */
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .p-btn6.-multiAnim::after {
+    transition-timing-function:
+      /* easeInOutExpo */
+      cubic-bezier(1, 0, 0, 1);
+  }

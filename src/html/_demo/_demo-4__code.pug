@@ -1,0 +1,34 @@
+.
+  .p-btn4 {
+    /* ボタンのスタイルは省略 */
+    position: relative;
+  }
+
+  .p-btn4::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    transform: scale(1);
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function:
+      /* easeInExpo */
+      cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+
+  .p-btn4:hover::before,
+  .p-btn4:focus::before {
+    transform: scale(0);
+  }
+
+  .p-btn4.-multiEase:hover::before,
+  .p-btn4.-multiEase:focus::before {
+    transition-timing-function:
+      /* easeOutExpo */
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }

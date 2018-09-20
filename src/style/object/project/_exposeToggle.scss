@@ -1,0 +1,35 @@
+.p-exposeToggle {
+  @at-root {
+    & {
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    .p-exposeToggle__text {
+      display: inline-flex;
+      align-items: center;
+      padding-right: 6px;
+      padding-left: 6px;
+      border: 1px solid c(black);
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 2;
+      white-space: nowrap;
+      background-color: rgba(c(green), 0.2);
+
+      &.-doExposeOff {
+        display: none;
+        #btn3ExposeToggle:checked ~ .p-exposeToggle & {
+          display: inline-flex;
+        }
+      }
+
+      &.-doExposeOn {
+        display: inline-flex;
+        #btn3ExposeToggle:checked ~ .p-exposeToggle & {
+          display: none;
+        }
+      }
+    }
+  }
+}

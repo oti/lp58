@@ -1,0 +1,14 @@
+.p-hang {
+  @at-root {
+    & {
+      display: flex;
+    }
+
+    .p-hang__header {
+
+    }
+    .p-hang__body {
+
+    }
+  }
+}

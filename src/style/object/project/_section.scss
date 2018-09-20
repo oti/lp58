@@ -1,13 +1,44 @@
 .p-section {
   @at-root {
     & {
-      padding-right: 40px;
-      padding-left: 40px;
+      padding: 60px 20px;
+
+      .-demoView & {
+        padding: vw(60) vw(20);
+      }
     }
 
     .p-section__inner {
       margin: auto;
-      max-width: 1200px;
+      max-width: 1560px;
+
+      .-demoView & {
+        max-width: 100%;
+      }
+    }
+
+    .p-section__heading {
+      // アンカーリンクされた時に余白を確保するため、paddingを設定しつつ、ネガティブに打ち消す
+      margin-bottom: -30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-size: 20px;
+
+      .-demoView & {
+        margin-bottom: vw(-30);
+        padding-top: vw(30);
+        padding-bottom: vw(30);
+
+        font-size: vw(40);
+      }
+    }
+
+    .p-section__demo {
+      margin-top: 30px;
+
+      .-demoView & {
+        margin-top: vw(30);
+      }
     }
   }
 }
