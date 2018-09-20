@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+// scssコンパイル用メタファイル
+@import 'config/var';
+@import 'config/placeholder';
+@import 'config/mixin';
+@import 'config/function';
+
+@import 'foundation/font-face';
+@import 'foundation/normalize';
+@import 'foundation/reset';
+@import 'foundation/base';
+@import 'foundation/what-input';
+
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+@import 'object/project/section';
+
+@import 'object/utility/visuallyHidden';

@@ -1,0 +1,30 @@
+// MediaQueries
+@mixin max($bp: 767px) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+@mixin min($bp: 768px) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+@mixin minmax($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin hover($brightness: 120%) {
+  transition: opacity 0.3s ease(easeOutSine);
+  @supports (top: 0) {
+    transition-property: filter;
+  }
+  &:hover {
+    opacity: 0.7;
+    @supports (top: 0) {
+      opacity: 1;
+      filter: brightness($brightness);
+    }
+  }
+}

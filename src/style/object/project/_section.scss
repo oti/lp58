@@ -1,0 +1,13 @@
+.p-section {
+  @at-root {
+    & {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    .p-section__inner {
+      margin: auto;
+      max-width: 1200px;
+    }
+  }
+}

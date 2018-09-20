@@ -1,0 +1,26 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ol,ul {
+  list-style: none inside;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: inherit;
+    text-decoration: none;
+  }
+}

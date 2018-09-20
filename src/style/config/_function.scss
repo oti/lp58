@@ -1,0 +1,11 @@
+@import '../../../node_modules/easing-sass-function/src/easing-function';
+@import '../../../node_modules/smooth-gradient-sass-function/src/smooth-gradient';
+
+@function c($name) {
+  @return map-get($color, $name);
+}
+
+// psdのパーツのサイズを渡すと750px幅ベースにおいてvw単位にする
+@function vw($psd_px, $base: 750) {
+  @return #{$psd_px / $base * 100 + vw}
+}
