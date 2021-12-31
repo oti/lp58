@@ -42,10 +42,6 @@
 
     .p-sectionNav__list {
       margin-top: 10px;
-      display: none;
-      #sectionNav:checked ~ & {
-        display: block;
-      }
 
       .-demoView & {
         margin-top: vw(5);
