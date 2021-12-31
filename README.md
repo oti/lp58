@@ -6,13 +6,13 @@ CSS Nite LP58「Coder's High 2018」で発表した「現場で役立つCSSア�
 
 ## 作った人
 
-<img src="./src/image/avatar.jpg" width="75px" alt="">「越智」というハンドルネームでやってます。
+株式会社まぼろしの伊藤です。「越智」というハンドルネームでやってます。
 
  - [伊藤由暁（株式会社まぼろし）](https://maboroshi.biz/staff/ito.html)
  - [otiext@gmail.com](mailto:otiext@gmail.com)
  - [Repogitory](https://github.com/oti/lp58)
  - [GitHub](https://github.com/oti)
- - [Twitter](https://twitter.com/o_ti)
+ - [Twitter](https://twitter.com/otiext)
  - [Facebook](https://www.facebook.com/otiext)
  - [instagram](https://www.instagram.com/otiext)
 
