@@ -45,7 +45,7 @@ pre {
 }
 
 a {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0000;
 }
 
 abbr[title] {
@@ -111,18 +111,9 @@ select {
   text-transform: none;
 }
 
-button {
-  -webkit-appearance: button;
-}
-
-[type="button"] {
-  -webkit-appearance: button;
-}
-
-[type="reset"] {
-  -webkit-appearance: button;
-}
-
+button,
+[type="button"],
+[type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
 }
@@ -184,11 +175,7 @@ textarea {
   overflow: auto;
 }
 
-[type="checkbox"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
+[type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
   padding: 0;
@@ -242,7 +229,7 @@ template,
 
 body {
   color: #010104;
-  background-color: rgba(1, 1, 4, 0.024);
+  background-color: #01010406;
   font-family: Noto Sans JP, sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -319,15 +306,12 @@ a:active {
   background-color: #fff;
   border: 4px solid #000;
   border-radius: 12px;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   max-width: 450px;
   padding: 15px 20px;
   font-size: 40px;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -351,16 +335,13 @@ a:active {
   background-color: #fff;
   border: 4px solid #000;
   border-radius: 12px;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   max-width: 450px;
   padding: 15px 20px;
   font-size: 40px;
   transition: background-color 0.5s linear;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -383,12 +364,10 @@ a:active {
 }
 
 .p-easeList__item {
-  border-top: 1px solid rgba(1, 1, 4, 0.25);
-  -ms-flex-align: center;
+  border-top: 1px solid #01010440;
   align-items: center;
   margin-top: 10px;
   padding-top: 10px;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -402,14 +381,12 @@ a:active {
 }
 
 .p-easeList__name {
-  -ms-flex: none;
   flex: none;
   width: 120px;
 }
 
 .p-easeList__width {
-  border: 1px solid rgba(1, 1, 4, 0.25);
-  -ms-flex: auto;
+  border: 1px solid #01010440;
   flex: auto;
   width: 40%;
   height: 20px;
@@ -432,8 +409,8 @@ a:active {
 
 .p-easeList__width:after {
   content: "";
-  border-left: 1px solid rgba(1, 1, 4, 0.25);
-  border-right: 1px solid rgba(1, 1, 4, 0.25);
+  border-left: 1px solid #01010440;
+  border-right: 1px solid #01010440;
   width: 33.3333%;
   height: 100%;
   position: absolute;
@@ -733,7 +710,6 @@ a:active {
 
 .p-easeList__color {
   background-color: #87ceeb;
-  -ms-flex: auto;
   flex: auto;
   width: 40%;
   height: 20px;
@@ -1012,16 +988,13 @@ a:active {
   color: #000;
   border: 4px solid #000;
   border-radius: 12px;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   max-width: 450px;
   height: 200px;
   padding: 15px 20px;
   font-size: 40px;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
   overflow: hidden;
@@ -1059,16 +1032,13 @@ a:active {
   background-color: #fff;
   border: 4px solid #000;
   border-radius: 12px;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   max-width: 450px;
   height: 200px;
   padding: 15px 20px;
   font-size: 40px;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
   overflow: hidden;
@@ -1110,9 +1080,7 @@ a:active {
   background-color: #fff;
   border: 4px solid #000;
   border-radius: 12px;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   max-width: 450px;
@@ -1122,7 +1090,6 @@ a:active {
   transition-property: box-shadow;
   transition-duration: 0.5s;
   transition-timing-function: linear;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
   overflow: hidden;
@@ -1229,7 +1196,7 @@ a:active {
 }
 
 .p-btn7.-opened .p-btn7__line.-line2 {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0000;
 }
 
 .p-btn7__line.-line3 {
@@ -1250,13 +1217,10 @@ a:active {
 .p-btn8 {
   color: #000;
   border: 1px solid #000;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 25px 40px 25px 140px;
   font-size: 60px;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
 }
@@ -1318,12 +1282,11 @@ a:active {
 
 #btn3ExposeToggle:checked ~ .p-btn8.-exposed {
   margin-bottom: 0;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 .p-btn8.-exposed .p-btn8__line {
-  background-color: rgba(255, 255, 0, 0.2);
+  background-color: #ff03;
   overflow: visible;
 }
 
@@ -1344,16 +1307,13 @@ a:active {
 .p-btn9 {
   color: #000;
   text-align: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0 10px 15px;
   font-size: 40px;
   transition-property: padding-left, letter-spacing;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
 }
@@ -1388,16 +1348,13 @@ a:active {
 .p-btn10 {
   color: #000;
   border: 1px solid #000;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 30px 60px;
   font-size: 60px;
   transition-property: color;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
   overflow: hidden;
@@ -1446,11 +1403,9 @@ a:active {
 
 .p-viewChange__inner {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #000000bf;
   border-radius: 8px;
-  -ms-flex-align: center;
   align-items: center;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 15px;
@@ -1484,7 +1439,7 @@ a:active {
 
 .p-sectionNav__inner {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #000000bf;
   border-radius: 8px;
   position: absolute;
   top: 15px;
@@ -1499,13 +1454,11 @@ a:active {
 }
 
 .p-sectionNav__heading {
-  -ms-flex-align: center;
   align-items: center;
   padding: 15px;
   font-size: 16px;
   font-weight: normal;
   line-height: 1;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1588,10 +1541,8 @@ a:active {
 
 .p-title {
   color: #fff;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 75px;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1632,32 +1583,26 @@ a:active {
 .p-split {
   border: 1px solid #010104;
   border-radius: 6px;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
 
-@media (max-width: 767.999px) {
+@media (width <= 767.999px) {
   .p-split {
-    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
 .p-split__col {
-  -ms-flex: 50%;
   flex: 50%;
-  display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
 }
 
 .p-code {
   background-color: #010104;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1675,7 +1620,6 @@ a:active {
 }
 
 .p-code__body {
-  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   margin: 30px;
   overflow-x: auto;
@@ -1693,11 +1637,9 @@ a:active {
 
 .p-view {
   background-color: #fff;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1715,17 +1657,12 @@ a:active {
 }
 
 .p-view__body {
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   width: auto;
   margin: 30px;
-  display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
 }
@@ -1745,9 +1682,7 @@ a:active {
 }
 
 .p-cssTab__control {
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1758,7 +1693,6 @@ a:active {
 .p-cssTab__btn {
   cursor: pointer;
   margin-right: 10px;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1768,23 +1702,21 @@ a:active {
 
 .p-cssTab__text {
   white-space: nowrap;
-  background-color: rgba(49, 221, 140, 0.2);
+  background-color: #31dd8c33;
   border: 1px solid #010104;
   border-radius: 4px;
-  -ms-flex-align: center;
   align-items: center;
   padding-left: 6px;
   padding-right: 6px;
   font-size: 14px;
   line-height: 2;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #easeListDuration05:checked ~ .p-cssTab .p-cssTab__text.-duration05,
 #easeListDuration1:checked ~ .p-cssTab .p-cssTab__text.-duration1,
 #easeListDuration3:checked ~ .p-cssTab .p-cssTab__text.-duration3 {
-  background-color: rgba(242, 93, 95, 0.5);
+  background-color: #f25d5f80;
 }
 
 .p-cssTab__text.-doSortInOut {
@@ -1870,16 +1802,14 @@ a:active {
 
 .p-exposeToggle__text {
   white-space: nowrap;
-  background-color: rgba(49, 221, 140, 0.2);
+  background-color: #31dd8c33;
   border: 1px solid #010104;
   border-radius: 4px;
-  -ms-flex-align: center;
   align-items: center;
   padding-left: 6px;
   padding-right: 6px;
   font-size: 14px;
   line-height: 2;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -1889,7 +1819,6 @@ a:active {
 
 #btn3ExposeToggle:checked ~ .p-exposeToggle .p-exposeToggle__text.-doExposeOff,
 .p-exposeToggle__text.-doExposeOn {
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -1899,7 +1828,6 @@ a:active {
 
 .p-hang,
 .p-shareList {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1926,10 +1854,8 @@ a.p-shareLink__link {
 
 .p-credit {
   color: #fff;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 50px;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1950,11 +1876,9 @@ a.p-shareLink__link {
 }
 
 .p-address {
-  -ms-flex-align: center;
   align-items: center;
   font-size: 14px;
   font-style: normal;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1971,7 +1895,6 @@ a.p-shareLink__link {
 }
 
 .p-address__list {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -2012,3 +1935,5 @@ a.p-address__link:focus {
 .u-hide {
   display: none;
 }
+
+/*# sourceMappingURL=index.ec94c447.css.map */
