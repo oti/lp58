@@ -12,29 +12,27 @@
       right: 155px;
       display: flex;
       align-items: center;
-      padding: 15px;
       border-radius: 8px;
       color: #fff;
-      height: 50px;
       background-color: rgba(#000, 0.75);
 
       .-demoView & {
         top: vw(10);
-        right: vw(112);
+        right: vw(140);
         padding: vw(10);
         border-radius: vw(8);
-        height: vw(30);
       }
     }
 
     .p-viewChange__btn {
       @extend %reset-Button;
       cursor: pointer;
-      display: flex;
-      align-items: center;
+      padding: 15px;
       font-size: 16px;
+      line-height: 1;
 
       .-demoView & {
+        padding: vw(15);
         font-size: vw(12);
       }
     }

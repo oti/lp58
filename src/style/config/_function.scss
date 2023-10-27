@@ -5,5 +5,5 @@
 
 // サイズを渡すと1280px幅ベースにおいてvw単位にする
 @function vw($size, $base: 1280) {
-  @return #{$size / $base * 100 + vw}
+  @return calc($size / $base * 100vw);
 }

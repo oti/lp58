@@ -2,7 +2,7 @@ body {
   color: c(black);
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   background-color: rgba(c(black), 0.025);
 
   &.-demoView {
@@ -14,7 +14,8 @@ img {
   vertical-align: bottom;
 }
 
-ol,ul {
+ol,
+ul {
   list-style: none inside;
 }
 

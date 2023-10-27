@@ -1,23 +1,73 @@
 -
-  var _title = ""
-  var _sitename = "現場で役立つCSSアニメーション オンラインデモ - CSS Nite LP58「Coder’s High 2018」"
-  var _desc = "2018年9月29日にCSS Nite LP58「Coder's High 2018」で発表した「現場で役立つCSSアニメーション」のデモをオンラインで掲載しています。"
-  var _id = "top"
-  var _host = "https://oti.github.io"
-  var _pagePath = "/lp58/"
-  var _permalink = _host+_pagePath
-  var escaped_title = encodeURIComponent(_title)
-  var escaped_permalink = encodeURIComponent(_permalink)
+  const _title = ""
+  const _sitename = "現場で役立つCSSアニメーション オンラインデモ - CSS Nite LP58「Coder’s High 2018」"
+  const _desc = "2018年9月29日にCSS Nite LP58「Coder's High 2018」で発表した「現場で役立つCSSアニメーション」のデモをオンラインで掲載しています。"
+  const _id = "top"
+  const _host = "https://oti.github.io"
+  const _pagePath = "/lp58/"
+  const _permalink = _host+_pagePath
+  const escaped_title = encodeURIComponent(_title)
+  const escaped_permalink = encodeURIComponent(_permalink)
 
 doctype html
 html(lang="ja")
-  include _partial/_meta
+  head
+  meta(charset="utf-8")
+  title= _sitename
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(name="description", content=_desc)
+  link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/rainbow-code@2.1.7/themes/css/rainbow.min.css")
+  link(rel="stylesheet", href="../style/style.scss")
+  link(rel="canonical", href=_permalink)
+  script(src="https://cdn.jsdelivr.net/npm/rainbow-code@2.1.7/dist/rainbow.min.js")
+  script(src="../script/script.js", type="module")
 
   body#top
-    include _partial/_header
-    main.l-main(role="main")
-      include _partial/_viewChange
-      include _partial/_nav
+    .l-header
+      .l-header__inner
+        .p-title
+          h1.p-title__main 現場で役立つCSSアニメーション 〜オンラインデモ〜
+          p.p-title__sub
+            time(datetime="2018-09-29") 2018-09-29
+            |  in CSS Nite LP58「Coder's High 2018」
+
+
+    main.l-main
+      .p-viewChange
+        .p-viewChange__inner
+          button.p-viewChange__btn#toggleViewMode(type="button") デモモードにする
+
+      nav.p-sectionNav
+        details.p-sectionNav__inner
+          summary.p-sectionNav__heading インデックス
+          ul.p-sectionNav__list
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#top") top
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-1") demo-1
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-2") demo-2
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-3") demo-3
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-4") demo-4
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-5") demo-5
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-6") demo-6
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-7") demo-7
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-8") demo-8
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-9") demo-9
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#demo-10") demo-10
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#contact") contact
+            li.p-sectionNav__item
+              a.p-sectionNav__link(href="#top") top
+
 
       .p-section
         .p-section__inner
@@ -76,7 +126,7 @@ html(lang="ja")
                   p.p-code__header Scss
                   .p-code__body
                     pre.p-code__pre
-                      code.p-code__code(data-language="css")
+                      code.p-code__code(data-language="scss")
                         include _demo/_demo-3__code
               .p-split__col
                 .p-view
@@ -223,6 +273,43 @@ html(lang="ja")
             .p-hang__header
               p シェア
             .p-hang__body
-              include _partial/_share
+              ul.p-shareList
+                li.p-shareList__item
+                  a.p-shareLink__link.-fb(target='_blank', href='https://www.facebook.com/sharer/sharer.php?u='+escaped_permalink) Facebookでシェアする
+                li.p-shareList__item
+                  a.p-shareLink__link.-tw(target='_blank', href='https://twitter.com/intent/tweet?text='+escaped_title+'&url='+escaped_permalink) ツイートする
+                li.p-shareList__item
+                  a.p-shareLink__link.-ht(target='_blank', href='http://b.hatena.ne.jp/my/add.confirm?title='+escaped_title+'&url='+escaped_permalink) はてなでブックマークを追加する
 
-    include _partial/_footer
+
+    footer.l-footer
+      .l-footer__inner
+        .p-credit
+          p.p-credit__license
+            small MIT License.
+          .p-credit__address
+            address.p-address
+              p.p-address__heading#contact contact
+              ul.p-address__list
+                li.p-address__item
+                  a.p-address__link(href="https://maboroshi.biz/staff/ito.html", target="_blank") 伊藤由暁（株式会社まぼろし）
+                li.p-address__item
+                  a.p-address__link(href="mailto:otiext@gmail.com") otiext@gmail.com
+                li.p-address__item
+                  a.p-address__link(href="https://github.com/oti/lp58", target="_blank") Repogitory
+                li.p-address__item
+                  a.p-address__link(href="https://github.com/oti", target="_blank") GitHub
+                li.p-address__item
+                  a.p-address__link(href="https://twitter.com/o_ti", target="_blank") Twitter
+                li.p-address__item
+                  a.p-address__link(href="https://www.facebook.com/otiext", target="_blank") Facebook
+                li.p-address__item
+                  a.p-address__link(href="https://www.instagram.com/otiext", target="_blank") instagram
+
+    // Global site tag (gtag.js) - Google Analytics
+    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-30468211-2")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-30468211-2');

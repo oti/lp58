@@ -1,59 +1,32 @@
 {
-  "name": "LP58",
+  "private": true,
+  "name": "lp58-demo",
   "version": "1.0.0",
   "description": "CSS Nite LP58「Coder's High 2018」で発表した「現場で役立つCSSアニメーション」のオンラインデモサイトです。",
-  "main": "gulpfile.babel.js",
+  "license": "MIT",
   "scripts": {
-    "start": "gulp build && gulp",
-    "build": "gulp build"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "ie >= 9",
-    "Android >= 4",
-    "iOS >= 6"
-  ],
-  "author": {
-    "name": "oti",
-    "email": "otiext@gmail.com",
-    "url": "https://github.com/oti/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/oti/lp58/"
+    "build": "parcel build src/html/index.pug --no-optimize --no-source-maps --public-url ./",
+    "lint:html": "markuplint 'dist/**/*.html'",
+    "lint:css": "stylelint 'dist/**/*.css'",
+    "start": "parcel src/html/index.pug --open --no-cache",
+    "test": "npm run lint:css && npm run lint:html",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "6.4.1",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "bower-webpack-plugin": "^0.1.9",
-    "browser-sync": "^2.24.7",
-    "css-loader": "^1.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-changed": "^3.2.0",
-    "gulp-combine-mq": "^0.4.0",
-    "gulp-filter": "^5.1.0",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.1",
-    "gulp-util": "^3.0.8",
-    "gulp-watch": "^5.0.1",
-    "gulp-webpack": "^1.5.0",
-    "json-loader": "^0.5.7",
-    "run-sequence": "^2.2.1",
-    "style-loader": "^0.23.0",
-    "url-loader": "^1.1.1"
+    "@parcel/transformer-pug": "^2.10.0",
+    "@parcel/transformer-sass": "^2.10.0",
+    "@prettier/plugin-pug": "^3.0.0",
+    "autoprefixer": "^10.4.16",
+    "husky": "^8.0.3",
+    "markuplint": "^3.13.0",
+    "parcel": "^2.10.0",
+    "pug": "^3.0.2",
+    "sass": "^1.69.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-recommended": "^13.0.0"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0",
-    "rainbow-code": "^2.1.4",
-    "smooth-scroll": "^14.2.1",
-    "what-input": "^5.1.1"
+    "normalize.css": "^8.0.1",
+    "smooth-scroll": "^16.1.3"
   }
 }
