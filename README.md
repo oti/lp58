@@ -25,4 +25,4 @@ Under the MIT License.
 ## 宣伝
 
 - Slack で使えるカスタム絵文字のセット「[デコモジ](https://github.com/decomoji/decomoji)」作ってます
-- お酒飲みながらウェブ開発とウェブアクセシビリティの話を配信する「[\#deisui_html_radio](https://freshlive.tv/search/deisui_html_radio)」やってます
+- お酒飲みながらウェブ開発とウェブアクセシビリティの話を配信する「[\#deisui_html_radio](https://www.youtube.com/@deisuihtmlradio/streams)」やってます
