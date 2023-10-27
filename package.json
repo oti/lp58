@@ -5,10 +5,10 @@
   "description": "CSS Nite LP58「Coder's High 2018」で発表した「現場で役立つCSSアニメーション」のオンラインデモサイトです。",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/html/index.pug --no-optimize --no-source-maps --public-url ./",
+    "build": "parcel build src/html/index.pug --dist-dir docs --no-optimize --no-source-maps --public-url ./",
     "lint:html": "markuplint 'dist/**/*.html'",
     "lint:css": "stylelint 'dist/**/*.css'",
-    "start": "parcel src/html/index.pug --open --no-cache",
+    "start": "parcel src/html/index.pug --open --no-cache --dist-dir docs",
     "test": "npm run lint:css && npm run lint:html",
     "prepare": "husky install"
   },
