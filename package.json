@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "lp58-demo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "CSS Nite LP58「Coder's High 2018」で発表した「現場で役立つCSSアニメーション」のオンラインデモサイトです。",
   "license": "MIT",
   "scripts": {
