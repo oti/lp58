@@ -20,7 +20,7 @@
     "husky": "^8.0.3",
     "markuplint": "^3.14.0",
     "parcel": "^2.10.3",
-    "pug": "^3.0.2",
+    "pug": "^3.0.3",
     "sass": "^1.69.5",
     "stylelint": "^15.11.0",
     "stylelint-config-recommended": "^13.0.0"
