@@ -1,19 +1,18 @@
-# LP58
+# CSS Nite LP58 「現場で役立つ CSS アニメーション」デモサイト
 
-CSS Nite LP58「Coder's High 2018」で発表した「現場で役立つ CSS アニメーション」のオンラインデモサイトです。
+[CSS Nite LP58「Coder's High 2018」](https://cssnite.jp/archives/post_3025.html)で発表した「現場で役立つ CSS アニメーション」のオンラインデモサイトです。
 
 [https://oti.github.io/lp58/](https://oti.github.io/lp58/)
+
+[フォローアップ記事](https://cssnite.jp/archives/post_3022.html)
 
 ## 作った人
 
 「越智 / otiext / oti」というハンドルネームでフロントエンドエンジニア/プロダクトデザイナーをやってます。
 
 - [otiext@gmail.com](mailto:otiext@gmail.com)
-- [Repogitory](https://github.com/oti/lp58)
-- [GitHub](https://github.com/oti)
 - [X](https://x.com/otiext)
-- [Facebook](https://www.facebook.com/otiext)
-- [instagram](https://www.instagram.com/otiext)
+- [Repogitory](https://github.com/oti/lp58)
 
 ## ライセンス
 
