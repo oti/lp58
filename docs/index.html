@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
@@ -15,11 +15,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/rainbow-code@2.1.7/themes/css/rainbow.min.css"
     />
-    <link rel="stylesheet" href="/lp58/index.2797c78d.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link rel="canonical" href="https://oti.github.io/lp58/" />
     <script src="https://cdn.jsdelivr.net/npm/rainbow-code@2.1.7/dist/rainbow.min.js"></script>
-    <script src="/lp58/index.75b2b000.js" type="module"></script>
-    <script src="/lp58/index.63dc8fdf.js" nomodule="" defer=""></script>
+    <script src="/script.mjs" type="module"></script>
   </head>
   <body id="top">
     <div class="l-header">
@@ -125,23 +124,23 @@
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">.p-btn1 {
-  /* ボタンのスタイルは省略 */
-  background-color: #fff;
-}
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">.p-btn1 {
+    /* ボタンのスタイルは省略 */
+    background-color: #fff;
+  }
 
-.p-btn1:hover,
-.p-btn1:focus {
-  background-color: tomato;
-}
+  .p-btn1:hover,
+  .p-btn1:focus {
+    background-color: tomato;
+  }
 
-.p-btn1.-transition {
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}</code></pre>
+  .p-btn1.-transition {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -149,8 +148,8 @@
                 <div class="p-view">
                   <p class="p-view__header">Result</p>
                   <div class="p-view__body">
-                    <a class="p-btn1" href="#demo-1">.p-btn1</a
-                    ><a class="p-btn1 -transition" href="#demo-1"
+                    <a class="p-btn1" href="#demo-1">.p-btn1</a>
+                    <a class="p-btn1 -transition" href="#demo-1"
                       >.p-btn1.-transition</a
                     >
                   </div>
@@ -171,25 +170,25 @@
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">.p-btn2 {
-  /* ボタンのスタイルは省略 */
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">.p-btn2 {
+    /* ボタンのスタイルは省略 */
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
 
-.p-btn2:hover,
-.p-btn2:focus {
-  background-color: tomato;
-}
+  .p-btn2:hover,
+  .p-btn2:focus {
+    background-color: tomato;
+  }
 
-.p-btn2.-easeInExpo {
-  transition-timing-function:
-    /* easeInExpo */
-    cubic-bezier(0.95, 0.05, 0.795, 0.035);
-}</code></pre>
+  .p-btn2.-easeInExpo {
+    transition-timing-function:
+      /* easeInExpo */
+      cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -197,8 +196,8 @@
                 <div class="p-view">
                   <p class="p-view__header">Result</p>
                   <div class="p-view__body">
-                    <a class="p-btn2" href="#demo-2">.p-btn2</a
-                    ><a class="p-btn2 -easeInExpo" href="#demo-2"
+                    <a class="p-btn2" href="#demo-2">.p-btn2</a>
+                    <a class="p-btn2 -easeInExpo" href="#demo-2"
                       >.p-btn2.-easeInExpo</a
                     >
                   </div>
@@ -221,45 +220,45 @@
                 <div class="p-code">
                   <p class="p-code__header">Scss</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="scss">// カスタムイージングのSass変数
-//   by https://easings.net/ja
-//
-$easeInSine:     cubic-bezier(0.47, 0, 0.745, 0.715);
-$easeOutSine:    cubic-bezier(0.39, 0.575, 0.565, 1);
-$easeInOutSine:  cubic-bezier(0.445, 0.05, 0.55, 0.95);
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="scss">// カスタムイージングのSass変数
+  //   by https://easings.net/ja
+  //
+  $easeInSine:     cubic-bezier(0.47, 0, 0.745, 0.715);
+  $easeOutSine:    cubic-bezier(0.39, 0.575, 0.565, 1);
+  $easeInOutSine:  cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
-$easeInQuad:     cubic-bezier(0.55, 0.085, 0.68, 0.53);
-$easeOutQuad:    cubic-bezier(0.25, 0.46, 0.45, 0.94);
-$easeInOutQuad:  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  $easeInQuad:     cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  $easeOutQuad:    cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  $easeInOutQuad:  cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
-$easeInCubic:    cubic-bezier(0.55, 0.055, 0.675, 0.19);
-$easeOutCubic:   cubic-bezier(0.215, 0.61, 0.355, 1);
-$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+  $easeInCubic:    cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  $easeOutCubic:   cubic-bezier(0.215, 0.61, 0.355, 1);
+  $easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
 
-$easeInQuart:    cubic-bezier(0.895, 0.03, 0.685, 0.22);
-$easeOutQuart:   cubic-bezier(0.165, 0.84, 0.44, 1);
-$easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
+  $easeInQuart:    cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  $easeOutQuart:   cubic-bezier(0.165, 0.84, 0.44, 1);
+  $easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
 
-$easeInQuint:    cubic-bezier(0.755, 0.05, 0.855, 0.06);
-$easeOutQuint:   cubic-bezier(0.23, 1, 0.32, 1);
-$easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+  $easeInQuint:    cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  $easeOutQuint:   cubic-bezier(0.23, 1, 0.32, 1);
+  $easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
 
-$easeInExpo:     cubic-bezier(0.95, 0.05, 0.795, 0.035);
-$easeOutExpo:    cubic-bezier(0.19, 1, 0.22, 1);
-$easeInOutExpo:  cubic-bezier(1, 0, 0, 1);
+  $easeInExpo:     cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  $easeOutExpo:    cubic-bezier(0.19, 1, 0.22, 1);
+  $easeInOutExpo:  cubic-bezier(1, 0, 0, 1);
 
-$easeInCirc:     cubic-bezier(0.6, 0.04, 0.98, 0.335);
-$easeOutCirc:    cubic-bezier(0.075, 0.82, 0.165, 1);
-$easeInOutCirc:  cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  $easeInCirc:     cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  $easeOutCirc:    cubic-bezier(0.075, 0.82, 0.165, 1);
+  $easeInOutCirc:  cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
-$easeInBack:     cubic-bezier(0.6, -0.28, 0.735, 0.045);
-$easeOutBack:    cubic-bezier(0.175, 0.885, 0.32, 1.275);
-$easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  $easeInBack:     cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  $easeOutBack:    cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-// 値にSass変数を指定して使う
-// transition-timing-function: $easeInExpo;</code></pre>
+  // 値にSass変数を指定して使う
+  // transition-timing-function: $easeInExpo;</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -273,387 +272,447 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                       type="radio"
                       name="duration"
                       checked=""
-                    /><input
+                    />
+                    <input
                       class="u-hide"
                       id="easeListDuration1"
                       type="radio"
                       name="duration"
-                    /><input
+                    />
+                    <input
                       class="u-hide"
                       id="easeListDuration3"
                       type="radio"
                       name="duration"
-                    /><input
+                    />
+                    <input
                       class="u-hide"
                       id="easeListSortToggle"
                       type="checkbox"
-                    /><input
+                    />
+                    <input
                       class="u-hide"
                       id="easeListAllAnimToggle"
                       type="checkbox"
-                    /><input
+                    />
+                    <input
                       class="u-hide"
                       id="easeListLoopToggle"
                       type="checkbox"
-                    /><input
+                    />
+                    <input
                       class="u-hide"
                       id="easeListPauseToggle"
                       type="checkbox"
                     />
                     <div class="p-cssTab">
                       <div class="p-cssTab__control">
-                        <label class="p-cssTab__btn" for="easeListDuration05"
-                          ><span class="p-cssTab__text -duration05"
-                            >0.5s</span
-                          ></label
-                        ><label class="p-cssTab__btn" for="easeListDuration1"
-                          ><span class="p-cssTab__text -duration1"
-                            >1s</span
-                          ></label
-                        ><label class="p-cssTab__btn" for="easeListDuration3"
-                          ><span class="p-cssTab__text -duration3"
-                            >3s</span
-                          ></label
-                        >
+                        <label class="p-cssTab__btn" for="easeListDuration05">
+                          <span class="p-cssTab__text -duration05">0.5s</span>
+                        </label>
+                        <label class="p-cssTab__btn" for="easeListDuration1">
+                          <span class="p-cssTab__text -duration1">1s</span>
+                        </label>
+                        <label class="p-cssTab__btn" for="easeListDuration3">
+                          <span class="p-cssTab__text -duration3">3s</span>
+                        </label>
                       </div>
                       <div class="p-cssTab__control">
-                        <label class="p-cssTab__btn" for="easeListSortToggle"
-                          ><span class="p-cssTab__text -doSortInOut"
+                        <label class="p-cssTab__btn" for="easeListSortToggle">
+                          <span class="p-cssTab__text -doSortInOut"
                             >in/outで並び替える</span
-                          ><span class="p-cssTab__text -doSortRate"
+                          >
+                          <span class="p-cssTab__text -doSortRate"
                             >変化度合いで並び替える</span
-                          ></label
-                        ><label
+                          >
+                        </label>
+                        <label
                           class="p-cssTab__btn"
                           for="easeListAllAnimToggle"
-                          ><span class="p-cssTab__text -doAnimOff"
-                            >transitionを戻す</span
-                          ><span class="p-cssTab__text -doAnimOn"
-                            >transitionさせる</span
-                          ></label
-                        ><label class="p-cssTab__btn" for="easeListLoopToggle"
-                          ><span class="p-cssTab__text -doLoopOff"
-                            >animationをやめる</span
-                          ><span class="p-cssTab__text -doLoopOn"
-                            >animationさせる</span
-                          ></label
-                        ><label class="p-cssTab__btn" for="easeListPauseToggle"
-                          ><span class="p-cssTab__text -doPauseOff"
-                            >animationを再開</span
-                          ><span class="p-cssTab__text -doPauseOn"
-                            >animationを停止</span
-                          ></label
                         >
+                          <span class="p-cssTab__text -doAnimOff"
+                            >transitionを戻す</span
+                          >
+                          <span class="p-cssTab__text -doAnimOn"
+                            >transitionさせる</span
+                          >
+                        </label>
+                        <label class="p-cssTab__btn" for="easeListLoopToggle">
+                          <span class="p-cssTab__text -doLoopOff"
+                            >animationをやめる</span
+                          >
+                          <span class="p-cssTab__text -doLoopOn"
+                            >animationさせる</span
+                          >
+                        </label>
+                        <label class="p-cssTab__btn" for="easeListPauseToggle">
+                          <span class="p-cssTab__text -doPauseOff"
+                            >animationを再開</span
+                          >
+                          <span class="p-cssTab__text -doPauseOn"
+                            >animationを停止</span
+                          >
+                        </label>
                       </div>
                       <div class="p-cssTab__content" id="sortInOut">
                         <ul class="p-easeList">
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">ease</p>
-                            <a
-                              class="p-easeList__width -ease"
-                              href="#demo-3"
-                            ></a
-                            ><a
-                              class="p-easeList__color -ease"
-                              href="#demo-3"
-                            ></a>
+                            <a class="p-easeList__width -ease" href="#demo-3">
+                            </a>
+                            <a class="p-easeList__color -ease" href="#demo-3">
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">ease-in</p>
                             <a
                               class="p-easeList__width -ease-in"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -ease-in"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInSine</p>
                             <a
                               class="p-easeList__width -easeInSine"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInSine"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInQuad</p>
                             <a
                               class="p-easeList__width -easeInQuad"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInQuad"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInCubic</p>
                             <a
                               class="p-easeList__width -easeInCubic"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInCubic"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInQuart</p>
                             <a
                               class="p-easeList__width -easeInQuart"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInQuart"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInQuint</p>
                             <a
                               class="p-easeList__width -easeInQuint"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInQuint"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInExpo</p>
                             <a
                               class="p-easeList__width -easeInExpo"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInExpo"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInCirc</p>
                             <a
                               class="p-easeList__width -easeInCirc"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInCirc"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInBack</p>
                             <a
                               class="p-easeList__width -easeInBack"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInBack"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">ease-out</p>
                             <a
                               class="p-easeList__width -ease-out"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -ease-out"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutSine</p>
                             <a
                               class="p-easeList__width -easeOutSine"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutSine"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutQuad</p>
                             <a
                               class="p-easeList__width -easeOutQuad"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutQuad"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutCubic</p>
                             <a
                               class="p-easeList__width -easeOutCubic"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutCubic"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutQuart</p>
                             <a
                               class="p-easeList__width -easeOutQuart"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutQuart"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutQuint</p>
                             <a
                               class="p-easeList__width -easeOutQuint"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutQuint"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutExpo</p>
                             <a
                               class="p-easeList__width -easeOutExpo"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutExpo"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutCirc</p>
                             <a
                               class="p-easeList__width -easeOutCirc"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutCirc"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutBack</p>
                             <a
                               class="p-easeList__width -easeOutBack"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutBack"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">ease-in-out</p>
                             <a
                               class="p-easeList__width -ease-in-out"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -ease-in-out"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutSine</p>
                             <a
                               class="p-easeList__width -easeInOutSine"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutSine"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutQuad</p>
                             <a
                               class="p-easeList__width -easeInOutQuad"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutQuad"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutCubic</p>
                             <a
                               class="p-easeList__width -easeInOutCubic"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutCubic"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutQuart</p>
                             <a
                               class="p-easeList__width -easeInOutQuart"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutQuart"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutQuint</p>
                             <a
                               class="p-easeList__width -easeInOutQuint"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutQuint"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutExpo</p>
                             <a
                               class="p-easeList__width -easeInOutExpo"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutExpo"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutCirc</p>
                             <a
                               class="p-easeList__width -easeInOutCirc"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutCirc"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutBack</p>
                             <a
                               class="p-easeList__width -easeInOutBack"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutBack"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                         </ul>
                       </div>
@@ -661,311 +720,361 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                         <ul class="p-easeList">
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">ease</p>
-                            <a
-                              class="p-easeList__width -ease"
-                              href="#demo-3"
-                            ></a
-                            ><a
-                              class="p-easeList__color -ease"
-                              href="#demo-3"
-                            ></a>
+                            <a class="p-easeList__width -ease" href="#demo-3">
+                            </a>
+                            <a class="p-easeList__color -ease" href="#demo-3">
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">ease-in</p>
                             <a
                               class="p-easeList__width -ease-in"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -ease-in"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">ease-out</p>
                             <a
                               class="p-easeList__width -ease-out"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -ease-out"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">ease-in-out</p>
                             <a
                               class="p-easeList__width -ease-in-out"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -ease-in-out"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInSine</p>
                             <a
                               class="p-easeList__width -easeInSine"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInSine"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutSine</p>
                             <a
                               class="p-easeList__width -easeOutSine"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutSine"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutSine</p>
                             <a
                               class="p-easeList__width -easeInOutSine"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutSine"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInQuad</p>
                             <a
                               class="p-easeList__width -easeInQuad"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInQuad"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutQuad</p>
                             <a
                               class="p-easeList__width -easeOutQuad"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutQuad"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutQuad</p>
                             <a
                               class="p-easeList__width -easeInOutQuad"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutQuad"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInCubic</p>
                             <a
                               class="p-easeList__width -easeInCubic"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInCubic"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutCubic</p>
                             <a
                               class="p-easeList__width -easeOutCubic"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutCubic"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutCubic</p>
                             <a
                               class="p-easeList__width -easeInOutCubic"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutCubic"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInQuart</p>
                             <a
                               class="p-easeList__width -easeInQuart"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInQuart"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutQuart</p>
                             <a
                               class="p-easeList__width -easeOutQuart"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutQuart"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutQuart</p>
                             <a
                               class="p-easeList__width -easeInOutQuart"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutQuart"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInQuint</p>
                             <a
                               class="p-easeList__width -easeInQuint"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInQuint"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutQuint</p>
                             <a
                               class="p-easeList__width -easeOutQuint"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutQuint"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutQuint</p>
                             <a
                               class="p-easeList__width -easeInOutQuint"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutQuint"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInExpo</p>
                             <a
                               class="p-easeList__width -easeInExpo"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInExpo"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutExpo</p>
                             <a
                               class="p-easeList__width -easeOutExpo"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutExpo"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutExpo</p>
                             <a
                               class="p-easeList__width -easeInOutExpo"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutExpo"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInCirc</p>
                             <a
                               class="p-easeList__width -easeInCirc"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInCirc"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutCirc</p>
                             <a
                               class="p-easeList__width -easeOutCirc"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutCirc"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutCirc</p>
                             <a
                               class="p-easeList__width -easeInOutCirc"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutCirc"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInBack</p>
                             <a
                               class="p-easeList__width -easeInBack"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInBack"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeOutBack</p>
                             <a
                               class="p-easeList__width -easeOutBack"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeOutBack"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                           <li class="p-easeList__item">
                             <p class="p-easeList__name">easeInOutBack</p>
                             <a
                               class="p-easeList__width -easeInOutBack"
                               href="#demo-3"
-                            ></a
-                            ><a
+                            >
+                            </a>
+                            <a
                               class="p-easeList__color -easeInOutBack"
                               href="#demo-3"
-                            ></a>
+                            >
+                            </a>
                           </li>
                         </ul>
                       </div>
@@ -990,41 +1099,41 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">.p-btn4 {
-  /* ボタンのスタイルは省略 */
-  position: relative;
-}
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">.p-btn4 {
+    /* ボタンのスタイルは省略 */
+    position: relative;
+  }
 
-.p-btn4::before {
-  content: &quot;&quot;;
-  position: absolute;
-  z-index: -1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: tomato;
-  transform: scale(1);
+  .p-btn4::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    transform: scale(1);
 
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function:
-    /* easeInExpo */
-    cubic-bezier(0.95, 0.05, 0.795, 0.035);
-}
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function:
+      /* easeInExpo */
+      cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
 
-.p-btn4:hover::before,
-.p-btn4:focus::before {
-  transform: scale(0);
-}
+  .p-btn4:hover::before,
+  .p-btn4:focus::before {
+    transform: scale(0);
+  }
 
-.p-btn4.-multiEase:hover::before,
-.p-btn4.-multiEase:focus::before {
-  transition-timing-function:
-    /* easeOutExpo */
-    cubic-bezier(0.19, 1, 0.22, 1);
-}</code></pre>
+  .p-btn4.-multiEase:hover::before,
+  .p-btn4.-multiEase:focus::before {
+    transition-timing-function:
+      /* easeOutExpo */
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -1032,8 +1141,8 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-view">
                   <p class="p-view__header">Result</p>
                   <div class="p-view__body">
-                    <a class="p-btn4" href="#demo-4">.p-btn4</a
-                    ><a class="p-btn4 -multiEase" href="#demo-4"
+                    <a class="p-btn4" href="#demo-4">.p-btn4</a>
+                    <a class="p-btn4 -multiEase" href="#demo-4"
                       >.p-btn4.-multiEase</a
                     >
                   </div>
@@ -1054,33 +1163,33 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">.p-btn5 {
-  /* demo-4と同じ */
-}
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">.p-btn5 {
+    /* demo-4と同じ */
+  }
 
-.p-btn5::before {
-  /* demo-4と同じ */
-}
+  .p-btn5::before {
+    /* demo-4と同じ */
+  }
 
-.p-btn5:hover::before,
-.p-btn5:focus::before {
-  /* demo-4と同じ */
-}
+  .p-btn5:hover::before,
+  .p-btn5:focus::before {
+    /* demo-4と同じ */
+  }
 
-.p-btn5.-multiProp {
-  transition-property: box-shadow;
-  transition-duration: 0.5s;
-  transition-timing-function:
-    /* easeOutExpo */
-    cubic-bezier(0.19, 1, 0.22, 1);
-}
+  .p-btn5.-multiProp {
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function:
+      /* easeOutExpo */
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }
 
-.p-btn5.-multiProp:hover,
-.p-btn5.-multiProp:focus {
-  box-shadow: inset 0 0 0 30px tomato;
-}</code></pre>
+  .p-btn5.-multiProp:hover,
+  .p-btn5.-multiProp:focus {
+    box-shadow: inset 0 0 0 30px tomato;
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -1088,8 +1197,8 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-view">
                   <p class="p-view__header">Result</p>
                   <div class="p-view__body">
-                    <a class="p-btn5" href="#demo-5">.p-btn5</a
-                    ><a class="p-btn5 -multiProp" href="#demo-5"
+                    <a class="p-btn5" href="#demo-5">.p-btn5</a>
+                    <a class="p-btn5 -multiProp" href="#demo-5"
                       >.p-btn5.-multiProp</a
                     >
                   </div>
@@ -1112,67 +1221,67 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">.p-btn6 {
-  /* demo-5 と同じ */
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">.p-btn6 {
+    /* demo-5 と同じ */
 
-  transition-property: box-shadow;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-.p-btn6::before {
-  /* demo-5 と同じ */
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+  .p-btn6::before {
+    /* demo-5 と同じ */
 
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-  transform: scale(1);
-}
-.p-btn6::after {
-  content: &quot;&quot;;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotateZ(-23deg);
-  z-index: -1;
-  display: block;
-  width: 510px;
-  height: 0;
-  background-color: tomato;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transform: scale(1);
+  }
+  .p-btn6::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(-23deg);
+    z-index: -1;
+    display: block;
+    width: 510px;
+    height: 0;
+    background-color: tomato;
 
-  transition-property: height, transform;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-.p-btn6:hover,
-.p-btn6:focus {
-  box-shadow: inset 0 0 0 30px tomato;
-}
-.p-btn6:hover::before,
-.p-btn6:focus::before {
-  transform: scale(0);
-}
-.p-btn6:hover::after,
-.p-btn6:focus::after {
-  height: 5px;
-  transform: translateY(-50%) rotateZ(-18.75deg);
-}
+    transition-property: height, transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+  .p-btn6:hover,
+  .p-btn6:focus {
+    box-shadow: inset 0 0 0 30px tomato;
+  }
+  .p-btn6:hover::before,
+  .p-btn6:focus::before {
+    transform: scale(0);
+  }
+  .p-btn6:hover::after,
+  .p-btn6:focus::after {
+    height: 5px;
+    transform: translateY(-50%) rotateZ(-18.75deg);
+  }
 
-.p-btn6.-multiAnim {
-  transition-timing-function:
-    /* easeInExpo */
-    cubic-bezier(0.95, 0.05, 0.795, 0.035);
-}
-.p-btn6.-multiAnim::before {
-  transition-timing-function:
-    /* easeOutExpo */
-    cubic-bezier(0.19, 1, 0.22, 1);
-}
-.p-btn6.-multiAnim::after {
-  transition-timing-function:
-    /* easeInOutExpo */
-    cubic-bezier(1, 0, 0, 1);
-}</code></pre>
+  .p-btn6.-multiAnim {
+    transition-timing-function:
+      /* easeInExpo */
+      cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+  .p-btn6.-multiAnim::before {
+    transition-timing-function:
+      /* easeOutExpo */
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .p-btn6.-multiAnim::after {
+    transition-timing-function:
+      /* easeInOutExpo */
+      cubic-bezier(1, 0, 0, 1);
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -1180,8 +1289,8 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-view">
                   <p class="p-view__header">Result</p>
                   <div class="p-view__body">
-                    <a class="p-btn6" href="#demo-6">.p-btn6</a
-                    ><a class="p-btn6 -multiAnim" href="#demo-6"
+                    <a class="p-btn6" href="#demo-6">.p-btn6</a>
+                    <a class="p-btn6 -multiAnim" href="#demo-6"
                       >.p-btn6.-multiAnim</a
                     >
                   </div>
@@ -1202,63 +1311,66 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">/* HTML
-<button class="p-btn7" type="button">
-  <span class="p-btn7__line -line1"></span>
-  <span class="p-btn7__line -line2"></span>
-  <span class="p-btn7__line -line3"></span>
-</button>
-*/
-.p-btn7 {
-  /* ボタンのスタイルは省略 */
-}
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">/* HTML
+  <button class="p-btn7" type="button">
+    <span class="p-btn7__line -line1">
+  </span>
+    <span class="p-btn7__line -line2">
+  </span>
+    <span class="p-btn7__line -line3">
+  </span>
+  </button>
+  */
+  .p-btn7 {
+    /* ボタンのスタイルは省略 */
+  }
 
-.p-btn7__line {
-  position: absolute;
-  left: 78px;
-  width: 210px;
-  height: 12px;
-  background-color: #000;
-}
-.p-btn7__line.-line1 {
-  top: 72px;
-  transform-origin: center center;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-property: top, background-color, transform;
-  transition-duration: 0.3s;
-  transition-delay: 0.6s, 0s, 0s;
-}
-.p-btn7__line.-line2 {
-  top: 120px;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-property: background-color;
-  transition-duration: 0.3s;
-}
-.p-btn7__line.-line3 {
-  top: 168px;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-property: top, background-color, transform;
-  transition-duration: 0.3s;
-  transition-delay: 0.6s, 0s, 0s;
-}
+  .p-btn7__line {
+    position: absolute;
+    left: 78px;
+    width: 210px;
+    height: 12px;
+    background-color: #000;
+  }
+  .p-btn7__line.-line1 {
+    top: 72px;
+    transform-origin: center center;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: top, background-color, transform;
+    transition-duration: 0.3s;
+    transition-delay: 0.6s, 0s, 0s;
+  }
+  .p-btn7__line.-line2 {
+    top: 120px;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+  }
+  .p-btn7__line.-line3 {
+    top: 168px;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: top, background-color, transform;
+    transition-duration: 0.3s;
+    transition-delay: 0.6s, 0s, 0s;
+  }
 
-.p-btn7.-opened .p-btn7__line.-line1 {
-  top: 120px;
-  background-color: tomato;
-  transform: rotateZ(23deg);
-  transition-delay: 0s, 0s, 0.6s;
-}
-.p-btn7.-opened .p-btn7__line.-line2 {
-  background-color: transparent;
-}
-.p-btn7.-opened .p-btn7__line.-line3 {
-  top: 120px;
-  background-color: tomato;
-  transform: rotateZ(-23deg);
-  transition-delay: 0s, 0s, 0.6s;
-}</code></pre>
+  .p-btn7.-opened .p-btn7__line.-line1 {
+    top: 120px;
+    background-color: tomato;
+    transform: rotateZ(23deg);
+    transition-delay: 0s, 0s, 0.6s;
+  }
+  .p-btn7.-opened .p-btn7__line.-line2 {
+    background-color: transparent;
+  }
+  .p-btn7.-opened .p-btn7__line.-line3 {
+    top: 120px;
+    background-color: tomato;
+    transform: rotateZ(-23deg);
+    transition-delay: 0s, 0s, 0.6s;
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -1272,9 +1384,9 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                       type="button"
                       aria-label="メニューを開く"
                     >
-                      <span class="p-btn7__line -line1"></span
-                      ><span class="p-btn7__line -line2"></span
-                      ><span class="p-btn7__line -line3"></span>
+                      <span class="p-btn7__line -line1"> </span>
+                      <span class="p-btn7__line -line2"> </span>
+                      <span class="p-btn7__line -line3"> </span>
                     </button>
                   </div>
                 </div>
@@ -1294,61 +1406,62 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">/* HTML
-<a class="p-btn8" href="#demo-8">
-  <span class="p-btn8__line"></span>
-  READ MORE
-</a>
-*/
-.p-btn8 {
-  /* ボタンのスタイルは省略 */
-}
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">/* HTML
+  <a class="p-btn8" href="#demo-8">
+    <span class="p-btn8__line">
+  </span>
+    READ MORE
+  </a>
+  */
+  .p-btn8 {
+    /* ボタンのスタイルは省略 */
+  }
 
-.p-btn8__line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 100%;
-  overflow: hidden;
-}
+  .p-btn8__line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100%;
+    overflow: hidden;
+  }
 
-.p-btn8__line::before,
-.p-btn8__line::after {
-  content: &quot;&quot;;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -2px;
-  width: 100%;
-  height: 4px;
-  background-color: #000;
-}
+  .p-btn8__line::before,
+  .p-btn8__line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+  }
 
-.p-btn8__line::after {
-  transform: translateX(-100%);
-}
+  .p-btn8__line::after {
+    transform: translateX(-100%);
+  }
 
-.p-btn8:hover .p-btn8__line::before,
-.p-btn8:focus .p-btn8__line::before {
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function:
-    cubic-bezier(0.19, 1, 0.22, 1);
-  transform: translateX(100%);
-}
+  .p-btn8:hover .p-btn8__line::before,
+  .p-btn8:focus .p-btn8__line::before {
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function:
+      cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateX(100%);
+  }
 
-.p-btn8:hover .p-btn8__line::after,
-.p-btn8:focus .p-btn8__line::after {
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function:
-    cubic-bezier(0.19, 1, 0.22, 1);
-  transition-delay: 0.5s;
-  transform: translateX(0);
-}</code></pre>
+  .p-btn8:hover .p-btn8__line::after,
+  .p-btn8:focus .p-btn8__line::after {
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function:
+      cubic-bezier(0.19, 1, 0.22, 1);
+    transition-delay: 0.5s;
+    transform: translateX(0);
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -1360,16 +1473,20 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                       class="u-hide"
                       id="btn3ExposeToggle"
                       type="checkbox"
-                    /><label class="p-exposeToggle" for="btn3ExposeToggle"
-                      ><span class="p-exposeToggle__text -doExposeOff"
+                    />
+                    <label class="p-exposeToggle" for="btn3ExposeToggle">
+                      <span class="p-exposeToggle__text -doExposeOff"
                         >どうやってやってるのかわかる方を隠す</span
-                      ><span class="p-exposeToggle__text -doExposeOn"
+                      >
+                      <span class="p-exposeToggle__text -doExposeOn"
                         >どうやってやってるのか見る</span
-                      ></label
-                    ><a class="p-btn8" href="#demo-8"
-                      ><span class="p-btn8__line"></span>MORE</a
-                    ><a class="p-btn8 -exposed" href="#demo-8"
-                      ><span class="p-btn8__line"></span>MORE</a
+                      >
+                    </label>
+                    <a class="p-btn8" href="#demo-8">
+                      <span class="p-btn8__line"> </span>MORE</a
+                    >
+                    <a class="p-btn8 -exposed" href="#demo-8">
+                      <span class="p-btn8__line"> </span>MORE</a
                     >
                   </div>
                 </div>
@@ -1389,47 +1506,47 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">/* HTML
-<a class="p-btn9" href="#demo-9">READ MORE</a>
-*/
-.p-btn9 {
-  /* ボタンのスタイルは省略 */
-  transition-property:
-    padding-left, letter-spacing;
-  transition-duration: 0.5s;
-  transition-timing-function:
-    cubic-bezier(0.19, 1, 0.22, 1);
-}
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">/* HTML
+  <a class="p-btn9" href="#demo-9">READ MORE</a>
+  */
+  .p-btn9 {
+    /* ボタンのスタイルは省略 */
+    transition-property:
+      padding-left, letter-spacing;
+    transition-duration: 0.5s;
+    transition-timing-function:
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }
 
-.p-btn9::after {
-  content: &quot;&quot;;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #000;
-  transition-property: transform;
-  transition-duration: 0.75s;
-  transition-timing-function:
-    cubic-bezier(0.19, 1, 0.22, 1);
-}
+  .p-btn9::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition-property: transform;
+    transition-duration: 0.75s;
+    transition-timing-function:
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }
 
-.p-btn9:focus,
-.p-btn9:hover {
-  padding-left: 0.7em;
-  letter-spacing: 0.7em;
-}
+  .p-btn9:focus,
+  .p-btn9:hover {
+    padding-left: 0.7em;
+    letter-spacing: 0.7em;
+  }
 
-.p-btn9:focus::after,
-.p-btn9:hover::after {
-  transition-duration: 0.5s;
-  transform: scaleX(0.2);
-}</code></pre>
+  .p-btn9:focus::after,
+  .p-btn9:hover::after {
+    transition-duration: 0.5s;
+    transform: scaleX(0.2);
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -1456,51 +1573,51 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-code">
                   <p class="p-code__header">CSS</p>
                   <div class="p-code__body">
-                    <pre
-                      class="p-code__pre"
-                    ><code class="p-code__code" data-language="css">/* HTML
-<a class="p-btn10" href="#demo-10">
-  <span class="p-btn10__inner">READ MORE</span>
-</a>
-*/
-.p-btn10 {
-  /* ボタンのスタイルは省略 */
+                    <pre class="p-code__pre">
+  <code class="p-code__code" data-language="css">/* HTML
+  <a class="p-btn10" href="#demo-10">
+    <span class="p-btn10__inner">READ MORE</span>
+  </a>
+  */
+  .p-btn10 {
+    /* ボタンのスタイルは省略 */
 
-  overflow: hidden;
-  transition-property: color;
-  transition-duration: 0.5s;
-  transition-timing-function:
-    cubic-bezier(0.19, 1, 0.22, 1);
-}
+    overflow: hidden;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function:
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }
 
-.p-btn10::before {
-  content: &quot;&quot;;
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
+  .p-btn10::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
 
-  transform-origin: 101% 0;
-  transform: scaleX(0);
+    transform-origin: 101% 0;
+    transform: scaleX(0);
 
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function:
-    cubic-bezier(0.19, 1, 0.22, 1);
-}
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function:
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }
 
-.p-btn10:hover {
-  color: #fff;
-}
+  .p-btn10:hover {
+    color: #fff;
+  }
 
-.p-btn10:hover::before {
-  transform-origin: 0 0;
-  transform: scaleX(1.01);
-}</code></pre>
+  .p-btn10:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1.01);
+  }</code>
+  </pre>
                   </div>
                 </div>
               </div>
@@ -1508,9 +1625,9 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 <div class="p-view">
                   <p class="p-view__header">Result</p>
                   <div class="p-view__body">
-                    <a class="p-btn10" href="#demo-10"
-                      ><span class="p-btn10__inner">READ MORE</span></a
-                    >
+                    <a class="p-btn10" href="#demo-10">
+                      <span class="p-btn10__inner">READ MORE</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1521,7 +1638,9 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
       <aside class="p-section">
         <div class="p-section__inner">
           <div class="p-hang">
-            <div class="p-hang__header"><p>シェア</p></div>
+            <div class="p-hang__header">
+              <p>シェア</p>
+            </div>
             <div class="p-hang__body">
               <ul class="p-shareList">
                 <li class="p-shareList__item">
@@ -1557,7 +1676,9 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
     <footer class="l-footer">
       <div class="l-footer__inner">
         <div class="p-credit">
-          <p class="p-credit__license"><small>MIT License.</small></p>
+          <p class="p-credit__license">
+            <small>MIT License.</small>
+          </p>
           <div class="p-credit__address">
             <address class="p-address">
               <p class="p-address__heading" id="contact">contact</p>
@@ -1567,7 +1688,7 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
                     class="p-address__link"
                     href="https://maboroshi.biz/staff/ito.html"
                     target="_blank"
-                    >伊藤由暁（株式会社まぼろし）</a
+                    >伊藤由暁</a
                   >
                 </li>
                 <li class="p-address__item">
@@ -1621,18 +1742,5 @@ $easeInOutBack:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
         </div>
       </div>
     </footer>
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=UA-30468211-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-30468211-2");
-    </script>
   </body>
 </html>
