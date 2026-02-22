@@ -1,9 +1,0 @@
-// 色
-@function c($name) {
-  @return map-get($color-map, $name);
-}
-
-// サイズを渡すと1280px幅ベースにおいてvw単位にする
-@function vw($size, $base: 1280) {
-  @return calc($size / $base * 100vw);
-}
